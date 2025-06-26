@@ -1,0 +1,23 @@
+{
+  "src/Pages/Home.vue": {
+    "file": "assets/Home-DkmGabAK.js",
+    "name": "Home",
+    "src": "src/Pages/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/main.js": {
+    "file": "assets/main-DjFcJKZX.js",
+    "name": "main",
+    "src": "src/main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/Pages/Home.vue"
+    ],
+    "css": [
+      "assets/main-CtPgbrSX.css"
+    ]
+  }
+}
