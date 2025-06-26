@@ -79,10 +79,10 @@ Civit/
 ├── app/
 │   ├── Controllers/Home.php         # Renvoie la page Inertia "Dashboard"
 │   ├── Libraries/Inertia.php        # Render Inertia côté serveur
-│   └── Views/index.php              # Vue HTML de base avec data-page
+│   └── Views/app.php                # Vue HTML de base avec data-page
 ├── src/
 │   ├── main.js                      # Entrée Vue 3 + Inertia
-│   └── Pages/Dashboard.vue         # Unique page Vue avec props dynamiques
+│   └── Pages/Home.vue               # Unique page Vue avec props dynamiques
 ├── public/
 │   └── build/                       # Fichiers générés par Vite (prod)
 ├── vite.config.js                   # Configuration Vite + alias + CORS
