@@ -42,6 +42,11 @@ export default defineConfig(({ mode }) => {
       // proxy: {
       //   '/api': 'http://localhost:8080',
       // },
+      
+      watch: {
+        ignored: ['**/writable/debugbar/**'],
+      },
     },
+
   };
 });

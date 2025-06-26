@@ -54,5 +54,16 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+
+
+        // NGLP
+
+        // Désactive la DebugBar pour les requêtes Inertia ou Vite
+        $isInertia = $request->hasHeader('X-Inertia');
+        $isViteClient = str_contains($request->getUserAgent(), 'vite');
+
+        if ($isInertia || $isViteClient || $request->isAJAX()) {
+            service('toolbar')->disable();
+        }
     }
 }

@@ -12,6 +12,6 @@
   <?php endif; ?>
 </head>
 <body>
-  <div id="app" data-page='<?= json_encode($page ?? []) ?>'></div>
+  <div id="app" data-page='<?= $page; ?>'></div>
 </body>
 </html>

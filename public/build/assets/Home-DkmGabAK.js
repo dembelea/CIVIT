@@ -1,1 +1,0 @@
-import{c as o,a as t,t as a,o as n}from"./main-DjFcJKZX.js";const r={class:"p-6 text-center"},c={class:"mt-2"},p={__name:"Home",props:{message:String},setup(s){return(l,e)=>(n(),o("div",r,[e[0]||(e[0]=t("h1",{class:"text-2xl font-bold"},"Home RHAO",-1)),t("p",c,a(s.message),1)]))}};export{p as default};
