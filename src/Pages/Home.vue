@@ -1,6 +1,6 @@
 <template>
   <div class="p-6 text-center">
-    <h1 class="text-2xl font-bold">Home RHAO</h1>
+    <h1 class="text-2xl font-bold">CiVIT Starter</h1>
     <p class="mt-2">{{ message }}</p>
   </div>
 </template>

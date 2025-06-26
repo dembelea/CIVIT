@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>CI4 + Inertia</title>
+  <title>CiVIT</title>
 
   <?php if (ENVIRONMENT === 'development'): ?>
     <!-- Appel au script Vite dev -->

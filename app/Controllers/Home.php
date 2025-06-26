@@ -9,7 +9,7 @@ class Home extends BaseController
     public function index() // ✅ ne pas typer en string
     {
         return Inertia::render('Home', [
-            'message' => 'Bienvenue dans CI4 + Inertia + Vue 3 + Tailwind !'
+            'message' => 'Bienvenue dans CI4 + Vue 3 + Inertia 2 + Tailwind 4!'
         ]);
     }
 }
