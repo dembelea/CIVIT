@@ -1,8 +1,8 @@
 # Civit —  CodeIgniter 4  + Vue 3 + Inertia + Tailwind  (Stater)
 
-> Starter web avec une seule page Vue 3 complète via Inertia.js (Dashboard.vue) intégrée à CodeIgniter 4 + Tailwind CSS + Vite.
+> Starter web avec une seule page Vue 3 complète via Inertia.js (Home.vue) intégrée à CodeIgniter 4 + Tailwind CSS + Vite.
 
-Ce projet sert de base pour construire une application légère ou un module unique en utilisant Vue 3 (Composition API), Inertia.js, et CodeIgniter 4. Idéal pour un tableau de bord ou une interface d’administration simple.
+Ce projet sert de base pour construire une application légère ou un module unique en utilisant Vue 3 (Composition API), Inertia.js, et CodeIgniter 4. Idéal pour un site web, un tableau de bord ou une interface d’administration simple.
 
 ---
 
@@ -18,7 +18,7 @@ Ce projet sert de base pour construire une application légère ou un module uni
 
 # Fonctionnalités
 
-- Page `Dashboard.vue` stylisée avec Tailwind
+- Page `Home.vue` stylisée avec Tailwind
 - Données dynamiques injectées depuis le backend
 - Mode développement (auto-reload) via Vite
 - Prêt pour la mise en production (`vite build`)
