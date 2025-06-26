@@ -22,3 +22,32 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# CodeIgniter
+.env
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/debugbar/*
+writable/uploads/*
+!writable/index.html
+
+# Composer
+/vendor/
+composer.lock
+
+# Node / Vite / Frontend
+node_modules/
+public/build/
+dist/
+.vite/
+
+# IDE / Systèmes
+.DS_Store
+.idea/
+*.swp
+*.swo
+
+# OS / système
+Thumbs.db
+desktop.ini
