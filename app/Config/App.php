@@ -6,6 +6,41 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
+    public function __construct()
+    {
+        parent::__construct(); // Ajout recommandé
+
+        $this->set_base_url();
+    }
+
+    private function set_base_url()
+    {
+        // Ne pas modifier baseURL si déjà défini (dans .env ou ailleurs)
+        if (!empty($this->baseURL)) {
+            return;
+        }
+
+        // Cas exécution CLI (par exemple migration, test...)
+        if (is_cli()) {
+            $this->baseURL = 'http://localhost/';
+            return;
+        }
+
+        // Détection HTTP_HOST + SCRIPT_NAME (ex : /index.php)
+        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+        $script = $_SERVER['SCRIPT_NAME'] ?? '';
+
+        $base = preg_replace('/index\.php.*/', '', $host . $script);
+        $base = rtrim($base, '/');
+
+        $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+            || ($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https';
+
+        $protocol = $isHttps ? 'https://' : 'http://';
+
+        $this->baseURL = $protocol . $base . '/';
+    }
+
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -16,7 +51,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = '';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -93,7 +128,7 @@ class App extends BaseConfig
      * strings (like currency markers, numbers, etc), that your program
      * should run under for this request.
      */
-    public string $defaultLocale = 'en';
+    public string $defaultLocale = 'fr';
 
     /**
      * --------------------------------------------------------------------------
@@ -120,7 +155,7 @@ class App extends BaseConfig
      *
      * @var list<string>
      */
-    public array $supportedLocales = ['en'];
+    public array $supportedLocales = [];
 
     /**
      * --------------------------------------------------------------------------
@@ -199,4 +234,6 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    public $csrf_protection = true;
 }

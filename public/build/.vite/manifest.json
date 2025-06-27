@@ -1,23 +1,250 @@
 {
-  "src/Pages/Home.vue": {
-    "file": "assets/Home-B9GlhZVy.js",
+  "__plugin-vue_export-helper-DlAUqK2U.js": {
+    "file": "assets/_plugin-vue_export-helper-DlAUqK2U.js",
+    "name": "_plugin-vue_export-helper"
+  },
+  "src/Pages/Admin/Components/StatCard.vue": {
+    "file": "assets/StatCard-BSW9MSNo.js",
+    "name": "StatCard",
+    "src": "src/Pages/Admin/Components/StatCard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Admin/Dashboard.vue": {
+    "file": "assets/Dashboard-BRqLeZns.js",
+    "name": "Dashboard",
+    "src": "src/Pages/Admin/Dashboard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Admin/Components/StatCard.vue",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Admin/Layouts/Header.vue": {
+    "file": "assets/Header-D3X0tHrH.js",
+    "name": "Header",
+    "src": "src/Pages/Admin/Layouts/Header.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-DlAUqK2U.js",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Admin/Layouts/Layout.vue": {
+    "file": "assets/Layout-CYZOAPiy.js",
+    "name": "Layout",
+    "src": "src/Pages/Admin/Layouts/Layout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Admin/Layouts/Header.vue",
+      "src/Pages/Admin/Layouts/Sidebar.vue",
+      "src/main.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "src/Pages/Admin/Layouts/Sidebar.vue": {
+    "file": "assets/Sidebar-NWSSP3kR.js",
+    "name": "Sidebar",
+    "src": "src/Pages/Admin/Layouts/Sidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Admin/Users.vue": {
+    "file": "assets/Users-Nee0XkrC.js",
+    "name": "Users",
+    "src": "src/Pages/Admin/Users.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Auth/Layouts/Layout.vue": {
+    "file": "assets/Layout-BoqhPOmO.js",
+    "name": "Layout",
+    "src": "src/Pages/Auth/Layouts/Layout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-DlAUqK2U.js",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Auth/Login.vue": {
+    "file": "assets/Login-B1wVNmCE.js",
+    "name": "Login",
+    "src": "src/Pages/Auth/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Auth/Register.vue": {
+    "file": "assets/Register-BfpQGqq7.js",
+    "name": "Register",
+    "src": "src/Pages/Auth/Register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Candidate/Layouts/Header.vue": {
+    "file": "assets/Header-BwJeJWvj.js",
+    "name": "Header",
+    "src": "src/Pages/Candidate/Layouts/Header.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-DlAUqK2U.js",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Candidate/Layouts/Layout.vue": {
+    "file": "assets/Layout-CcnfQ7zW.js",
+    "name": "Layout",
+    "src": "src/Pages/Candidate/Layouts/Layout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Candidate/Layouts/Header.vue",
+      "src/Pages/Candidate/Layouts/Sidebar.vue",
+      "src/main.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "src/Pages/Candidate/Layouts/Sidebar.vue": {
+    "file": "assets/Sidebar--8N5tLph.js",
+    "name": "Sidebar",
+    "src": "src/Pages/Candidate/Layouts/Sidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Public/Home.vue": {
+    "file": "assets/Home-C74YA8KA.js",
     "name": "Home",
-    "src": "src/Pages/Home.vue",
+    "src": "src/Pages/Public/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Public/Layouts/Header.vue": {
+    "file": "assets/Header-1NTgagYe.js",
+    "name": "Header",
+    "src": "src/Pages/Public/Layouts/Header.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Public/Layouts/Navbar.vue",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Public/Layouts/Layout.vue": {
+    "file": "assets/Layout-DQ44I8gZ.js",
+    "name": "Layout",
+    "src": "src/Pages/Public/Layouts/Layout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Public/Layouts/Header.vue",
+      "src/main.js",
+      "src/Pages/Public/Layouts/Navbar.vue"
+    ]
+  },
+  "src/Pages/Public/Layouts/Navbar.vue": {
+    "file": "assets/Navbar-BwlOwQFy.js",
+    "name": "Navbar",
+    "src": "src/Pages/Public/Layouts/Navbar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Recruiter/Components/StatCard.vue": {
+    "file": "assets/StatCard-CSfuwERK.js",
+    "name": "StatCard",
+    "src": "src/Pages/Recruiter/Components/StatCard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Recruiter/Dashboard.vue": {
+    "file": "assets/Dashboard-k-W6nJbG.js",
+    "name": "Dashboard",
+    "src": "src/Pages/Recruiter/Dashboard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Recruiter/Components/StatCard.vue",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Recruiter/Layouts/Header.vue": {
+    "file": "assets/Header-CQxhtky9.js",
+    "name": "Header",
+    "src": "src/Pages/Recruiter/Layouts/Header.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__plugin-vue_export-helper-DlAUqK2U.js",
+      "src/main.js"
+    ]
+  },
+  "src/Pages/Recruiter/Layouts/Layout.vue": {
+    "file": "assets/Layout-8LQaTAxy.js",
+    "name": "Layout",
+    "src": "src/Pages/Recruiter/Layouts/Layout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/Pages/Recruiter/Layouts/Header.vue",
+      "src/Pages/Recruiter/Layouts/Sidebar.vue",
+      "src/main.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "src/Pages/Recruiter/Layouts/Sidebar.vue": {
+    "file": "assets/Sidebar-DDd1Ijdu.js",
+    "name": "Sidebar",
+    "src": "src/Pages/Recruiter/Layouts/Sidebar.vue",
     "isDynamicEntry": true,
     "imports": [
       "src/main.js"
     ]
   },
   "src/main.js": {
-    "file": "assets/main-C3ai-uU4.js",
+    "file": "assets/main-qEuswBsL.js",
     "name": "main",
     "src": "src/main.js",
     "isEntry": true,
     "dynamicImports": [
-      "src/Pages/Home.vue"
+      "src/Pages/Admin/Components/StatCard.vue",
+      "src/Pages/Admin/Dashboard.vue",
+      "src/Pages/Admin/Layouts/Header.vue",
+      "src/Pages/Admin/Layouts/Layout.vue",
+      "src/Pages/Admin/Layouts/Sidebar.vue",
+      "src/Pages/Admin/Users.vue",
+      "src/Pages/Auth/Layouts/Layout.vue",
+      "src/Pages/Auth/Login.vue",
+      "src/Pages/Auth/Register.vue",
+      "src/Pages/Candidate/Layouts/Header.vue",
+      "src/Pages/Candidate/Layouts/Layout.vue",
+      "src/Pages/Candidate/Layouts/Sidebar.vue",
+      "src/Pages/Public/Home.vue",
+      "src/Pages/Public/Layouts/Header.vue",
+      "src/Pages/Public/Layouts/Layout.vue",
+      "src/Pages/Public/Layouts/Navbar.vue",
+      "src/Pages/Recruiter/Components/StatCard.vue",
+      "src/Pages/Recruiter/Dashboard.vue",
+      "src/Pages/Recruiter/Layouts/Header.vue",
+      "src/Pages/Recruiter/Layouts/Layout.vue",
+      "src/Pages/Recruiter/Layouts/Sidebar.vue",
+      "src/Pages/Admin/Layouts/Layout.vue",
+      "src/Pages/Auth/Layouts/Layout.vue",
+      "src/Pages/Candidate/Layouts/Layout.vue",
+      "src/Pages/Public/Layouts/Layout.vue",
+      "src/Pages/Recruiter/Layouts/Layout.vue"
     ],
     "css": [
-      "assets/main-B2lxRq1p.css"
+      "assets/main-BlJNosur.css"
     ]
   }
 }

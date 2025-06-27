@@ -1,4 +1,4 @@
-# Civit —  CodeIgniter 4  + Vue 3 + Inertia + Tailwind  (Stater)
+# Civit —  CodeIgniter 4  + Vue 3 + Inertia + Tailwind  (Starter)
 
 > Starter web avec une seule page Vue 3 complète via Inertia.js (Home.vue) intégrée à CodeIgniter 4 + Tailwind CSS + Vite.
 
@@ -100,6 +100,50 @@ npm run build
 ```
 
 Cela génère les fichiers dans `public/build`, et ils seront automatiquement chargés grâce au helper `vite('main.js')`.
+
+---
+
+# Modifications CI4
+
+1 - App/Config
+	
+	App {
+		- ajout de la fonction set_base_url
+		- definition {
+			$baseURL = ''
+			$indexPage = ''
+			$defaultLocale = 'fr'
+			$supportedLocales = [];
+			$csrf_protection = true;
+		}
+	} 
+
+2 - Filters
+
+	$aliases {
+		ajouter{
+			'auth'     => \App\Filters\AuthFilter::class,
+        	'role'     => \App\Filters\RoleFilter::class,
+		}
+	}
+	$globals 'after' {
+		activer 'secureheaders', // chercher à savoir pourquoi
+	}
+3 - Logger 
+ 	
+ 	$threshold = (ENVIRONMENT === 'production') ? 0 : 9;
+
+4 - Security
+
+	$tokenName = 'nglpcr_csrf_token';
+	$cookieName = 'nglpcr_csrf_cookie';
+	$regenerate = false;
+
+
+5 - Session
+	
+	$driver = 'CodeIgniter\Session\Handlers\DatabaseHandler';
+	$savePath = 'ci_sessions';
 
 ---
 
